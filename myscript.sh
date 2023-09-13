@@ -1,7 +1,9 @@
-echo ""### clean node modules ###"
+#!/bin/sh
+
+echo "### clean node modules ###"
 rm -rf node_modules
 
-echo "### Yarn install ###"
+echo "### npm install ###"
 npm install
 
 echo "### Run tests ###"
