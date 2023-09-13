@@ -19,8 +19,10 @@ pipeline {
             }
         }
         stage('Generate signed Android release APK.') {
-            docker { 
-                image 'fastlanetools/fastlane' 
+            agent {
+                docker { 
+                    image 'fastlanetools/fastlane' 
+                }
             }
             steps {
                 echo "Buling signed release APK..."
