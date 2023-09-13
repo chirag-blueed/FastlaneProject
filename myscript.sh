@@ -2,11 +2,11 @@ echo ""### clean node modules ###"
 rm -rf node_modules
 
 echo "### Yarn install ###"
-yarn install
+npm install
 
 echo "### Run tests ###"
-yarn test
+npm test
 
-cd android
 echo "### Preperaing Android artifact🧑‍💻... ###"
+cd android
 Fastlane build
